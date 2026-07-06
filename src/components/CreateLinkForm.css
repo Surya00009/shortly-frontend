@@ -1,0 +1,63 @@
+.create-form{
+
+    display:flex;
+
+    gap:15px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.create-form input{
+
+    flex:1;
+
+    padding:16px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+}
+
+.create-form input:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+}
+
+.create-form button{
+
+    width:180px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.create-form button:hover{
+
+    background:#1d4ed8;
+
+}
