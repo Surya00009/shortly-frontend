@@ -95,7 +95,15 @@ function LinkTable({ links, onDelete }) {
 
                                     <strong>
 
-                                        🌐 {new URL(link.originalUrl).hostname}
+                                        🌐 🌐 {
+    (() => {
+        try {
+            return new URL(link.originalUrl).hostname;
+        } catch {
+            return "Invalid URL";
+        }
+    })()
+}
 
                                     </strong>
 

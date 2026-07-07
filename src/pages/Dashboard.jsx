@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 import Navbar from "../components/Navbar";
 import AnalyticsCard from "../components/AnalyticsCard";
 import CreateLinkForm from "../components/CreateLinkForm";
@@ -45,15 +46,18 @@ function Dashboard() {
   async function createLink(originalUrl) {
     try {
       const response = await api.post("/api/links", { originalUrl });
-      console.log("SUCCESS RESPONSE:");
-      console.log(response.data);
       setGeneratedLink(response.data);
       await loadAnalytics();
       await loadLinks();
+      return true;
     } catch (error) {
-      console.log("FULL ERROR:", error);
-      console.log("STATUS:", error.response?.status);
-      console.log("BODY:", error.response?.data);
+      console.log(error);
+      if (error.response?.data?.message) {
+        toast.error(error.response.data.message);
+      } else {
+        toast.error("Unable to generate short link.");
+      }
+      return false;
     }
   }
 

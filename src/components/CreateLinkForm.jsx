@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast from "react-hot-toast";
 import "./CreateLinkForm.css";
 
 function CreateLinkForm({ onCreate }) {
@@ -9,11 +10,21 @@ function CreateLinkForm({ onCreate }) {
 
         e.preventDefault();
 
-        if (!url.trim()) return;
+        if (!url.trim()) {
 
-        await onCreate(url);
+            toast.error("Please enter a URL");
 
-        setUrl("");
+            return;
+
+        }
+
+        const success = await onCreate(url);
+
+        if (success) {
+
+            setUrl("");
+
+        }
 
     }
 
@@ -24,18 +35,13 @@ function CreateLinkForm({ onCreate }) {
             onSubmit={handleSubmit}>
 
             <input
-
                 type="text"
-
                 placeholder="Enter the URL you want to shorten..."
-
                 value={url}
-
                 onChange={(e) => setUrl(e.target.value)}
-
             />
 
-            <button>
+            <button type="submit">
 
                 Generate Link
 
