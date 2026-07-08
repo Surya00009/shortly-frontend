@@ -75,13 +75,7 @@ function Login(){
                 </button>
 
                 <div className="login-footer">
-
-                    <Link to="/register">
-
-                        Create Account
-
-                    </Link>
-
+                    <p> New here?{" "} <Link to="/register"> Register </Link> </p>
                 </div>
 
             </form>
