@@ -28,39 +28,39 @@ function Register() {
   } 
 
   return ( 
-    <div className="auth-container"> 
-      <div className="auth-card"> 
+    <div className="login-container"> 
+      <form className="login-card" onSubmit={handleRegister}> 
         <h1>Shortly</h1> 
         <h2>Create Account</h2> 
-        <form onSubmit={handleRegister}> 
-          <input 
-            type="text" 
-            placeholder="Full Name" 
-            value={fullName} 
-            onChange={(e) => setFullName(e.target.value)} 
-            required 
-          /> 
-          <input 
-            type="email" 
-            placeholder="Email Address" 
-            value={email} 
-            onChange={(e) => setEmail(e.target.value)} 
-            required 
-          /> 
-          <input 
-            type="password" 
-            placeholder="Password" 
-            value={password} 
-            onChange={(e) => setPassword(e.target.value)} 
-            required 
-          /> 
-          <button type="submit"> Register </button> 
-        </form> 
-        <p style={{ marginTop: "20px" }}> 
-          Already have an account? {" "} 
-          <Link to="/"> Login </Link> 
-        </p> 
-      </div> 
+        
+        <input 
+          type="text" 
+          placeholder="Full Name" 
+          value={fullName} 
+          onChange={(e) => setFullName(e.target.value)} 
+          required 
+        /> 
+        <input 
+          type="email" 
+          placeholder="Email Address" 
+          value={email} 
+          onChange={(e) => setEmail(e.target.value)} 
+          required 
+        /> 
+        <input 
+          type="password" 
+          placeholder="Password" 
+          value={password} 
+          onChange={(e) => setPassword(e.target.value)} 
+          required 
+        /> 
+        <button type="submit"> Register </button> 
+
+        <div className="login-footer">
+          <span>Already have an account? </span>
+          <Link to="/">Sign in</Link>
+        </div>
+      </form> 
     </div> 
   ); 
 } 
