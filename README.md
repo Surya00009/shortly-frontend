@@ -185,3 +185,18 @@ http://localhost:5173
 ```
 
 Make sure the Spring Boot backend is running before accessing the frontend.
+---
+
+# 🚀 Future Enhancements
+
+The following improvements are planned for future versions of the frontend application:
+
+- Dark Mode support
+- Responsive mobile layout
+- User profile management
+- Copy-to-clipboard confirmation
+- Advanced search and filtering
+- Loading indicators for API requests
+- Pagination support
+- Better error handling and validation messages
+- Enhanced UI animations
