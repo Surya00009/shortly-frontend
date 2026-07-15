@@ -200,3 +200,22 @@ The following improvements are planned for future versions of the frontend appli
 - Pagination support
 - Better error handling and validation messages
 - Enhanced UI animations
+- ---
+
+# 👨‍💻 Author
+
+**Surya Prakash**
+
+Java Backend Developer | Spring Boot Developer
+
+- **GitHub:** https://github.com/Surya00009
+- **LinkedIn:** https://www.linkedin.com/in/surya-prakash-a0267a284/
+- **Email:** suryaprakashnaidu77@gmail.com
+
+---
+
+# ⭐ Support
+
+If you found this project useful or interesting, consider giving it a ⭐ on GitHub.
+
+Feedback and suggestions are always welcome.
