@@ -128,3 +128,60 @@ The frontend communicates with the Spring Boot backend through REST APIs using A
 - Handle API errors gracefully
 - Redirect users after successful authentication
 - Protect private routes from unauthorized access
+
+- ---
+
+# ⚙️ Setup & Installation
+
+## Prerequisites
+
+Before running the frontend application, ensure the following software is installed:
+
+- Node.js
+- npm
+- Git
+- Visual Studio Code
+
+---
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/Surya00009/shortly-frontend.git
+```
+
+---
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Configure Backend URL
+
+Update the backend API URL in the Axios configuration if required.
+
+Example:
+
+```javascript
+const BASE_URL = "http://localhost:8080";
+```
+
+---
+
+## Run the Application
+
+```bash
+npm run dev
+```
+
+The frontend will be available at:
+
+```
+http://localhost:5173
+```
+
+Make sure the Spring Boot backend is running before accessing the frontend.
