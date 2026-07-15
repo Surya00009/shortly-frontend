@@ -77,3 +77,29 @@ The frontend communicates with the Spring Boot backend using REST APIs and Axios
 - Git
 - GitHub
 - npm
+- ---
+
+# 📂 Project Structure
+
+```
+src
+├── assets
+├── components
+├── pages
+├── services
+├── styles
+├── App.jsx
+├── main.jsx
+```
+
+## Folder Responsibilities
+
+| Folder | Purpose |
+|----------|---------|
+| `assets` | Stores static files such as images and icons. |
+| `components` | Contains reusable UI components. |
+| `pages` | Contains application pages such as Login, Register, and Dashboard. |
+| `services` | Handles communication with the Spring Boot backend using Axios. |
+| `styles` | Contains CSS files for styling the application. |
+| `App.jsx` | Defines routing and application layout. |
+| `main.jsx` | Entry point of the React application. |
