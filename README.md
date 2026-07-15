@@ -9,3 +9,41 @@
 Shortly Frontend is a responsive React application that provides a clean and user-friendly interface for interacting with the Shortly backend. Users can securely authenticate, manage shortened URLs, and view analytics through an intuitive dashboard.
 
 The frontend communicates with the Spring Boot backend using REST APIs and Axios.
+---
+
+# ✨ Features
+
+## 🔐 Authentication
+
+- User Registration
+- User Login
+- JWT-based Authentication
+- Protected Routes
+
+---
+
+## 📋 Dashboard
+
+- View all shortened URLs
+- Search URLs
+- Copy shortened URLs
+- Delete URLs
+- View URL statistics
+
+---
+
+## 🔗 URL Management
+
+- Create Short URLs
+- Search Existing URLs
+- Delete URLs
+- Redirect to Original URLs
+
+---
+
+## 🎨 User Interface
+
+- Responsive Layout
+- Navigation Bar
+- Toast Notifications
+- Clean and Simple User Experience
