@@ -47,3 +47,33 @@ The frontend communicates with the Spring Boot backend using REST APIs and Axios
 - Navigation Bar
 - Toast Notifications
 - Clean and Simple User Experience
+- ---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React.js
+- React Router DOM
+- Axios
+- JavaScript (ES6+)
+- CSS3
+- Vite
+
+---
+
+## Backend Integration
+
+- Spring Boot REST APIs
+- JWT Authentication
+- JSON
+- HTTP/HTTPS
+
+---
+
+## Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- npm
